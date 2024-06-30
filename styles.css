@@ -1,0 +1,114 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6347;
+  }
+  
+  /* Parallax Sections */
+  .parallax-section {
+    position: relative;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  #about {
+    background-color: #ff7f50; /* Coral */
+  }
+  
+  #skills {
+    background-color: #6a5acd; /* SlateBlue */
+  }
+  
+  #experience {
+    background-color: #20b2aa; /* LightSeaGreen */
+  }
+  
+  #projects {
+    background-color: #ff69b4; /* HotPink */
+  }
+  
+  #contact {
+    background-color: #8a2be2; /* BlueViolet */
+  }
+  
+  .content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul li a {
+      font-size: 14px;
+    }
+  
+    .content {
+      padding: 10px
+    }  
+}
